@@ -7,15 +7,17 @@
 int main(void)
 {
 int i;
+char j=(char)i;
 for (i  =       0;    i       <=      9;    i++)
 {
 if (i	==	9)
 {
-putchar(char(i));
+putchar(j);
+putchar(' ');
 }
 else
 {
-putchar(char(i));
+putchar(j);
 putchar(',');
 putchar(' ');
 }
