@@ -9,13 +9,13 @@ int main(void)
 char i;
 for (i  =       'a';    i       <=      'z';    i++)
 {
-switch(i)
+switch (i)
 {
 case 'e':
 break;
 case 'q':
 break;
-default :
+default:
 putchar(i);
 }
 }
