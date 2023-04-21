@@ -16,7 +16,7 @@ putchar(i);
 else
 {
 putchar(i);
-putchar(',';
+putchar(',');
 putchar(' ');
 }
 }
