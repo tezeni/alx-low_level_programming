@@ -7,7 +7,8 @@
 int main(void)
 {
 int i;
-char j=(char)i;
+char j;
+j=(char)i;
 for (i  =       0;    i       <=      9;    i++)
 {
 if (i	==	9)
