@@ -11,11 +11,11 @@ for (i  =       0;    i       <=      9;    i++)
 {
 if (i	==	9)
 {
-putchar(i);
+putchar(char(i));
 }
 else
 {
-putchar(i);
+putchar(char(i));
 putchar(',');
 putchar(' ');
 }
