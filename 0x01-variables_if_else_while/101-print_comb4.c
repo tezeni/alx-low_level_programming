@@ -21,7 +21,7 @@ if (i   ==      j)
 continue;
 if (j	>	k)
 continue;
-if (j	==	K)
+if (j	==	k)
 continue;
 putchar('0'     +       i);
 putchar('0'     +       j);
