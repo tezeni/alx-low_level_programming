@@ -7,13 +7,21 @@
 int main(void)
 {
 int i;
-for (i  =       0;    i       <=      100;    i++)
+int j;
+for (i=0;i<=9;i++)
+
 {
-putchar((i%10)     +       i);
-if (i   ==      89)
+for (j=0;j<=9;j++)
+{
+if (i>j)
 continue;
+if (i==j)
+continue;
+putchar(i);
+putchar(j);
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return  (0);
