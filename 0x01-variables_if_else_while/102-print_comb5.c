@@ -22,6 +22,7 @@ if (j   ==      k)
 continue;
 putchar('0'     +       i);
 putchar('0'     +       j);
+putchar(' ');
 putchar('0'     +       k);
 putchar('0'	+	l);
 if (j   ==      8       &&      k       ==      9)
