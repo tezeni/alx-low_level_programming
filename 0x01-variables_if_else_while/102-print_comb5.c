@@ -18,8 +18,8 @@ for (k  =       0;      k       <=      9;      k++)
 {
 for (l	=	0;	l	<=	9;	l++)
 {
-if (i	==	k	&&	j	==	l)
-continue;	
+if (i	==	k	&&	j	==	l	&&	j	>	k)
+continue;
 putchar('0'     +       i);
 putchar('0'     +       j);
 putchar(' ');
