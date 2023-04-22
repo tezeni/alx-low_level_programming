@@ -18,8 +18,6 @@ for (k  =       0;      k       <=      9;      k++)
 {
 for (l	=	0;	l	<=	9;	l++)
 {
-if (j   ==      k)
-continue;
 putchar('0'     +       i);
 putchar('0'     +       j);
 putchar(' ');
