@@ -26,8 +26,8 @@ continue;
 putchar('0'     +       i);
 putchar('0'     +       j);
 putchar('0'	+	k);
-if (j   ==      8)
-continue;
+/*if (j   ==      8)*/
+/*continue;*/
 putchar(',');
 putchar(' ');
 }
