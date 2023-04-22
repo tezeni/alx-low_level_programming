@@ -20,7 +20,7 @@ for (l	=	0;	l	<=	9;	l++)
 {
 if (i	==	k	&&	j	==	l)
 continue;
-if (j	==	k)
+if (i	==	k	&&	i	>	j)
 continue;
 putchar('0'     +       i);
 putchar('0'     +       j);
