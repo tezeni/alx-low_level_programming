@@ -1,8 +1,9 @@
 #include "main.h"
-        /**
-         * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
-         * followed by a new line
-         */
+/**
+ *  * main -print_alphabet prints lowercase alphabet
+ *   *followed by a new line
+ *    * Return: Always 0 (Success):
+**/
         void print_alphabet(void)
         {
                 char ch = 'a';
