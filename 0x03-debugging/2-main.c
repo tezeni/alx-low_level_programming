@@ -9,7 +9,7 @@
 int main(void)
 {
 	int largest;
-	int largest_number(int i, int j, int k)
+	int largest_number(int i, int j, int k);
 
 	int a = 972;
 	int b = -98;
