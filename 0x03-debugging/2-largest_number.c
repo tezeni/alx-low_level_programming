@@ -14,19 +14,19 @@ int largest_number(int i, int j, int k)
 
 	if (i > j)
 	{
-        
+
 		if (i > k)
 		{
 			largest = i;
 		}
 	}
-	else 
+	else
 	{
 		if (j > k)
 		{
 			largest = j;
 		}
-		else 
+		else
 		{
 			largest = k;
 		}
