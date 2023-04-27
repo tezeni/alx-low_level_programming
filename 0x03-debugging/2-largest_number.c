@@ -8,27 +8,27 @@
  *     *Return: largest number
 **/
 
-int largest_number(int a, int b, int c)
+int largest_number(int i, int j, int k)
 {
 	int largest;
 
-	if (a > b)
+	if (i > j)
 	{
         
-		if (a > c)
+		if (i > k)
 		{
-			largest = a;
+			largest = i;
 		}
 	}
 	else 
 	{
-		if (b > c)
+		if (j > k)
 		{
-			largest = b;
+			largest = j;
 		}
 		else 
 		{
-			largest = c;
+			largest = k;
 		}
 	}
 	return (largest);
