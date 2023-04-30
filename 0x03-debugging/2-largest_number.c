@@ -14,7 +14,6 @@ int largest_number(int i, int j, int k)
 
 	if (i > j)
 	{
-
 		if (i > k)
 		{
 			largest = i;
