@@ -2,7 +2,7 @@
 
 /**
  * * reset_to_98: reset the input to 98
- *  *@n: input integer
+ *  *@n : input integer
  *   * return : void
 **/
 
