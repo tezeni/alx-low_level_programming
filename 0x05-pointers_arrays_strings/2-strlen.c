@@ -1,13 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
- * * _strlen - returns the length of string
- *  *
- *   * @str : the string input
- *    *
- *     * return : length
-**/
+ *_strlen - returns the length of string
+ *@str : the string input
+ *return : return length (success)
+ */
 
 int _strlen(const char *str)
 {
@@ -16,5 +13,4 @@ int _strlen(const char *str)
 	while (*str++)
 	length++;
 	return	(length);
-
 }
