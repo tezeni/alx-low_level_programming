@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strcat - concatinates two string
+ * _strncat - concatinates two string
  * @dest: first input
  * @src: second input
  * @n: third input
  * Return: A pointer to the resulting string
 **/
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dlen = 0;
 	int i = 0;
