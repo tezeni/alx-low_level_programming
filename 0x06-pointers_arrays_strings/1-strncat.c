@@ -5,7 +5,7 @@
  * @dest: first input
  * @src: second input
  * @n: third input
- * Return: A pointer to the resulting string
+ * Return: A pointer to the resulting string 
 **/
 
 char *_strncat(char *dest, char *src, int n)
@@ -15,7 +15,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (dest[i++])
 	dlen++;
-	for (i = 0; src[i] && i < 0; i++)
+	for (i = 0; src[i] && i < n; i++)
 	dest[dlen++] = src[i];
 	return (dest);
 }
