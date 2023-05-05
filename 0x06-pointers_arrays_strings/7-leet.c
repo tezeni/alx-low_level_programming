@@ -8,23 +8,26 @@
 
 char *leet(char *s)
 {
-	int i = 0, j = 0, k = 5;
-	char m[5] = {'A', 'E', 'O', 'T', 'L'};
+	int a = 0, b = 0, l = 5;
+	char r[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (s[i])
+	while (s[a])
 	{
-		j = 0;
+		b = 0;
 
-		while (j < k)
+		while (b < l)
 		{
-			if (s[i] == m[j] || s[i] - 32 == n[j])
+			if (s[a] == r[b] || s[a] - 32 == r[b])
 			{
-				s[i] = n[j];
+				s[a] = n[b];
 			}
-			j++;
+
+			b++;
 		}
-		i++;
+
+		a++;
 	}
+
 	return (s);
 }
