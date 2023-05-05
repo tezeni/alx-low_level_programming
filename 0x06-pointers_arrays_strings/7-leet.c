@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	int i = 0, j = 0, k = 5;
-	char m[5] = {'a', 'e', 'o', 't', 'l'};
+	char m[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
 	while (s[i])
@@ -18,7 +18,7 @@ char *leet(char *s)
 
 		while (j < k)
 		{
-			if (s[i] == m[j] || s[i] + 32 == n[j])
+			if (s[i] == m[j] || s[i] - 32 == n[j])
 			{
 				s[i] = n[j];
 			}
