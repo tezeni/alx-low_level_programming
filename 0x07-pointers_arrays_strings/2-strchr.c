@@ -1,24 +1,21 @@
-#include"main.h"
-#include<stdio.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
- * _strchr - function to check a char
- * @s: array to be checked
- * @c: the char to be found
- * Return: the array s or NULL
-**/
-
+ * _strchr - Entry point
+ * @s: input
+ * @c: input
+ * Return: Always 0 (Success)
+ */
 char *_strchr(char *s, char c)
 {
 	int i;
-	int j;
 
-	for (i = 0; i >= '\0'; i++)
+	for (i = 0; s[i] >= '\0'; i++)
 	{
 		if (s[i] == c)
-		{
-			for (j = i; j >= '\0'; j++)
-				return (s + j);
-		}
+			return (s + i);
+	}
+
 	return (NULL);
 }
