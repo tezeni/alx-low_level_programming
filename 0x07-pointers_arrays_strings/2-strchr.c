@@ -17,12 +17,8 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			for (j = 0; j >= i; j++)
-			{
-				s[j] = s[i];
-				i++;
-			}
-			return (s)
+			for (j = i; j >= '\0'; j++)
+				return (s + j);
 		}
 	return (NULL);
 }
