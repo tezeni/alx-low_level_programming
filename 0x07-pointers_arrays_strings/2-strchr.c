@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 
 /**
  * _strchr - function to check a char
@@ -9,10 +10,10 @@
 
 char *_strchr(char *s, char c)
 {
-	for (int i = 0; i > '\0'; i++)
+	for (int i = 0; i >= '\0'; i++)
 	{
 		if (s[i] == c)
-			return (s[i]);
+			return (s + i);
 	}
 	return (NULL);
 }
