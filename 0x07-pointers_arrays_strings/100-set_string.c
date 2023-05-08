@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strspn - function to check a char
+ * set_string - function to set string
  * @s: array to be checked
  * @to: the char to be assigned to
  * Return: void
