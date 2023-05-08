@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strspn - function to check a char
+ * print_diagsums - function to check a char
  * @a: array input
  * @size: array input
  * Return: void
