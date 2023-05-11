@@ -19,3 +19,18 @@ void _print_rev_recursion(char *s)
 	len--;
 	_print_rev_recursion(s - 1);
 }
+
+/**
+ * _strlen_recursion - function to count string length
+ * @s: the string to be counted
+ * Return: the length of the string
+**/
+
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	return (1 + _strlen_recursion(s + 1));
+}
