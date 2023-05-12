@@ -8,9 +8,9 @@
  * @argv: a pointer to the character passed
  * Return: success
 **/
-int main(int argc, char *argv[])
+int main (int argc, char *argv[])
 {
-	_putchar(argv[0]);
+	_putchar(*argv[0]);
 	_putchar('\n');
-	exit(EXIT_SUCCESS);
+	return (0);
 }
