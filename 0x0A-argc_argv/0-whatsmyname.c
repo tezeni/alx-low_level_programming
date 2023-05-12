@@ -9,8 +9,6 @@
  * @argv: a pointer to the character passed
  * Return: success
 **/
-int _putchar(char c);
-
 int main(int argc, char *argv[])
 {
 	(void)argc;
