@@ -11,9 +11,13 @@
 **/
 int main(int argc, char *argv[])
 {
-	if (argc < 0)
+	int count = 0;
+
+	if (argc >= 0 && argv[count] != NULL)
 	{
-		printf("%d\n", argv++);
+
+		count++;
+		printf("%d\n", count);
 		argc--;
 	}
 	return (0);
