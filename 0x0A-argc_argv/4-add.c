@@ -13,26 +13,26 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned int k, sum = 0;
-	char *e;
+	char *a;
+	unsigned int j, sum = 0;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			e = argv[i];
+			a = argv[i];
 
-			for (k = 0; k < strlen(e); k++)
+			for (j = 0; j < strlen(a); j++)
 			{
-				if (e[k] < 48 || e[k] > 57)
+				if (a[j] < 48 || a[j] > 57)
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
 
-			sum += atoi(e);
-			e++;
+			sum += atoi(a);
+			a++;
 		}
 
 		printf("%d\n", sum);
@@ -43,4 +43,4 @@ int main(int argc, char *argv[])
 	}
 
 	return (0);
-}       
+}
