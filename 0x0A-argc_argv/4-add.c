@@ -4,8 +4,6 @@
 #include <unistd.h>
 #include <string.h>
 
-int _isdigit(int c);
-
 /**
  * main - fuction with arguments
  * @argc: an intiger passed
@@ -15,26 +13,34 @@ int _isdigit(int c);
 int main(int argc, char *argv[])
 {
 	int i;
-	int j, sum = 0;
+	unsigned int k, sum = 0;
+	char *e;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			j = atoi(argv[i]);
+			e = argv[i];
 
-			if (_isdigit(j) == 0)
+			for (k = 0; k < strlen(e); k++)
 			{
-				printf("Error\n");
-				return (1);
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			sum += j;
+
+			sum += atoi(e);
+			e++;
 		}
+
 		printf("%d\n", sum);
 	}
 	else
 	{
 		printf("0\n");
 	}
+
 	return (0);
-}
+}       
