@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - creates array of character
@@ -9,8 +10,10 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *a[];
+	char *a;
 	unsigned int j;
+
+	a = malloc(size * sizeof(char));
 
 	if (size == 0)
 		return (NULL);
