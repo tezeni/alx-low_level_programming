@@ -8,14 +8,14 @@
 **/
 
 char *create_array(unsigned int size, char c)
-{       
-        char *a[];
-       	unsigned int j;
+{
+	char *a[];
+	unsigned int j;
 
-        if (size == 0)
-                return (NULL);
-        for (j = 0; j < size; j++)
-        {
+	if (size == 0)
+		return (NULL);
+	for (j = 0; j < size; j++)
+	{
 		a[j] = c;
 	}
 	return (a);
