@@ -14,22 +14,22 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i;
 	char *a;
 	unsigned int k;
-	int l;
+	char *l;
 
 	i = 0;
 	l = NULL;
 	a = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
 
-	if (s1 == atoi(l))
+	if (s1 == l)
 	{
-		if (s2 == atoi(l))
+		if (s2 == l)
 			a = 0;
 		else
 			a = s2;
 	}
-	if (s2 == atoi(l))
+	if (s2 == l)
 	{
-		if (s1 == atoi(l))
+		if (s1 == l)
 			a = 0;
 		else
 			a = s1;
