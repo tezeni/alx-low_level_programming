@@ -3,11 +3,25 @@
 #include <string.h>
 
 /**
- * str_concat - concatinate two strings
- * @s1: the first string
- * @s2: the second str
+ * alloc_grid - initializes 2d array
+ * @height: array size
+ * @width: array size
  * Return: pointer to concatnated strings
 **/
 int **alloc_grid(int width, int height)
 {
+	int *a;
+	unsigned int i, j;
 
+	a = malloc((width * height) * sizeof(int));
+
+	if (a != 0)
+		return (NULL);
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			a[i][j] = 0;
+		}
+	}
+	return (a);
