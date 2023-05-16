@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		a[i] = s1[i];
 		i++;
 	}
-	for (k = 0; s2[k] != 0; K++)
+	for (k = 0; s2[k] != 0; k++)
 	{
 		a[i] = s2[k];
 		i++;
