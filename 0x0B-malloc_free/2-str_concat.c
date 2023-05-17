@@ -14,29 +14,16 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i;
 	char *a;
 	unsigned int k;
-	char *l;
 
 	i = 0;
-	l = NULL;
 	a = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
 
-	if (s1 == l)
-	{
-		if (s2 == l)
-			a = 0;
-		else
-			a = s2;
-	}
-	if (s2 == l)
-	{
-		if (s1 == l)
-			a = 0;
-		else
-			a = s1;
-	}
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 
-	if (a != 0)
-	{
+	i = 0;
+	a = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
+
 	while (s1[i] != 0)
 	{
 		a[i] = s1[i];
@@ -49,6 +36,4 @@ char *str_concat(char *s1, char *s2)
 	}
 	a[i] = '\0';
 	return (a);
-	}
-	return (NULL);
 }
