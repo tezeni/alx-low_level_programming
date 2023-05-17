@@ -21,7 +21,7 @@ char *_strdup(char *str)
 		return (NULL);
 	if (i != 0)
 	{
-		if (a == 0 || a == NULL)
+		if (a == NULL)
 			return (NULL);
 		for (j = 0; j < (i + 1); j++)
 		{
