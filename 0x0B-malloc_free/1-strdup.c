@@ -19,16 +19,11 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	if (i >= 0)
-	{
-		if (a == NULL)
-			return (NULL);
-		for (j = 0; j < (i + 1); j++)
-		{
-			a[j] = str[j];
-		}
-		return (a);
-	}
-	else
+	if (a == NULL)
 		return (NULL);
+	for (j = 0; j < (i + 1); j++)
+	{
+		a[j] = str[j];
+	}
+	return (a);
 }
