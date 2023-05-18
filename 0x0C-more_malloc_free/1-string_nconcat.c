@@ -26,9 +26,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (a == NULL)
 		return (NULL);
-	while (a[j] != '\0')
+	while (s1[j] != '\0')
 	{
-		a[j] = s[j];
+		a[j] = s1[j];
 		j++;
 	}
 	if (sizeof(s2) >= n)
@@ -42,6 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (a);
 	}
 	else
+	{
 		for (i = 0; i < sizeof(s2); i++)
 		{
 			a[j] = s2[i];
@@ -49,5 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		a[j] = '\0';
 		return (a);
+	}
 }
 
