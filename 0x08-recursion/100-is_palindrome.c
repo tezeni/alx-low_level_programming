@@ -11,8 +11,9 @@ int is_palindrome(char *s);
 
 int is_palindrome(char *s)
 {
-	int l;
+	int l, i;
 
+	i = 0 ;
 	l = strlen(s);
 
 	if (s == "")
@@ -30,7 +31,7 @@ int is_palindrome(char *s)
 int check_palindrom(int l, char *s, int i)
 {
 	if (s[i] == s[l - i - 1])
-		return (check_palindrome(l, s, i + 1));
+		return (check_palindrom(l, s, i + 1));
 
 	return (0);
 }
