@@ -1,6 +1,7 @@
 #include "main.h"
 #include <string.h>
 
+int strlen_no_wilds(char *str);
 char *_match(char *str1, char *str2);
 int wildcmp(char *s1, char *s2);
 void _wild(char **wstr);
