@@ -52,8 +52,8 @@ void _wild(char **wstr)
 
 char *_match(char *str1, char *str2)
 {
-	int str1_len = strlen(str1) - 1;
-	int str2_len = strlen(str2) - 1;
+	int str1_len = strlen_no_wilds(str1) - 1;
+	int str2_len = strlen_no_wilds(str2) - 1;
 
 	if (*str2 == '*')
 		_wild(&str2);
@@ -65,4 +65,26 @@ char *_match(char *str1, char *str2)
 	}
 
 	return (str2);
+}
+
+/**
+ * strlen_no_wilds - function to count string length excluding wildcard
+ * @str: given string
+ * Return: string lenx excluding wildcard chars
+**/
+
+int strlen_no_wilds(char *str)
+{
+	int l = 0;
+	int i = 0;
+
+	if (*(str + i))
+	{
+		if (*str != '*')
+			l++;
+
+		i++;
+		l += strlen_no_wilds(str + i);
+	}
+	return (l);
 }
