@@ -16,7 +16,7 @@ int wildcmp(char *s1, char *s2)
 	if (*s2 == '*')
 	{
 		_wild(&s2);
-		s2 = postfix_match(s1, s2);
+		s2 = _match(s1, s2);
 	}
 
 	if (*s2 == '\0')
