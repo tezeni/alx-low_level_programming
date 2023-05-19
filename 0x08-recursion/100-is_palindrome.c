@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 int check_palindrom(int l, char *s, int i);
 int is_palindrome(char *s);
@@ -13,6 +14,7 @@ int is_palindrome(char *s)
 	int l;
 
 	l = strlen(s);
+
 	if (s == "")
 		return (1);
 	return (check_palindrom(l, s, i));
