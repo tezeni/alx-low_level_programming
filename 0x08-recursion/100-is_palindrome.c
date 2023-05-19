@@ -16,7 +16,7 @@ int is_palindrome(char *s)
 	i = 0 ;
 	l = strlen(s);
 
-	if (s == "")
+	if (!(*s))
 		return (1);
 	return (check_palindrom(l, s, i));
 }
