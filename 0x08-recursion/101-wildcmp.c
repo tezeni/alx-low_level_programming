@@ -1,6 +1,10 @@
 #include "main.h"
 #include <string.h>
 
+char *_match(char *str1, char *str2);
+int wildcmp(char *s1, char *s2);
+void _wild(char **wstr);
+
 /**
  * wildcmp - function to check strings are identical
  * @s1: first string
