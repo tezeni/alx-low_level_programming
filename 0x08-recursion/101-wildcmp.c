@@ -36,10 +36,10 @@ int wildcmp(char *s1, char *s2)
 
 void _wild(char **wstr)
 {
-	if (**wildstr == '*')
+	if (**wstr == '*')
 	{
-		(*wildstr)++;
-		_wild(wildstr);
+		(*wstr)++;
+		_wild(wstr);
 	}
 }
 
