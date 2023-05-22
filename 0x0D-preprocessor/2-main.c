@@ -5,7 +5,7 @@
  * Return: 0
 **/
 
-int main ()
+int main()
 {
 	printf("%s\n, _FILE_);
 
