@@ -7,7 +7,7 @@
  * @s: input string
  * Return: String length
 **/
-int strnlen(const char *s)
+unsigned int strnlen(const char *s)
 {
 	int l = 0;
 
@@ -23,7 +23,7 @@ int strnlen(const char *s)
 **/
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int l = 0, c = 0, sum = 0;
+	unsigned int l = 0, c = 0, s = 0;
 
 	if (b == NULL)
 		return (0);
