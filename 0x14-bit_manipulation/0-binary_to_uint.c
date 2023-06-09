@@ -3,11 +3,11 @@
 #include"main.h"
 
 /**
- * strnlen - function to return the length of a string
+ * _strnlen - function to return the length of a string
  * @s: input string
  * Return: String length
 **/
-unsigned int strnlen(const char *s)
+int _strnlen(const char *s)
 {
 	int l = 0;
 
@@ -28,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	l = strnlen(b);
+	l = _strnlen(b);
 
 	while (l--)
 	{
